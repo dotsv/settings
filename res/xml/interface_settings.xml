@@ -4,6 +4,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/interface_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    
+     <!-- Active display -->
+    <PreferenceScreen
+       android:key="active_display"
+       android:fragment="com.android.settings.chameleonos.ActiveDisplaySettings"
+       android:title="@string/ad_settings_title"
+       android:summary="@string/ad_settings_summary">
+    </PreferenceScreen>
 
     <PreferenceCategory
          android:key="category_light_options"
