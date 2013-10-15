@@ -4912,6 +4912,7 @@
     <string name="interface_settings_title">Nexus Control</string>
     <string name="interface_title">Ajustes de Interface</string>
 
+
     <string name="battery_summary">Permite ajustar el color del led para la bateria y notificaciones.</string>
     <string name="menuapagado_title">Menu de Apagado</string>
     <string name="power_summary">Modifica el menu de apagado de tu Nexus añadiendo o eliminando opciones a tu menú de apagado.</string>
@@ -4925,6 +4926,16 @@
     <string name="ad_title">ACTIVE DISPLAY</string>
     <string name="active_tiles_note_title">Active Display</string>
     <string name="active_tiles_note_summary">Active display permite mostrar las notificaciones en la pantalla de bloqueo cuando el dispositivo tiene la pantalla apagada.</string>
+
+    <string name="ad_timeout_title">Tiempo de espera</string>
+    <string name="ad_timeout_3s">3 segundos</string>
+    <string name="ad_timeout_5s">5 segundos</string>
+    <string name="ad_timeout_8s">8 segundos</string>
+    <string name="ad_timeout_10s">10 segundos</string>
+    <string name="ad_timeout_15s">15 segundos/string>
+    <string name="ad_timeout_25s">25 segundos</string>
+
+
    
     <!--Active Display Start -->
     <string name="trigger_category">Trigger region</string>
@@ -4967,6 +4978,11 @@
     <string name="ad_redisplay_1h">1 hora</string>
     <string name="ad_redisplay_2h">2 horas</string>
     <string name="ad_redisplay_5h">5 horas</string>
+     <string name="ad_excluded_apps_title">Bloquear aplicaciones</string>
+    <string name="ad_excluded_apps_summary">Las aplicaciones bloqueadas no seran mostradas en Active Display.</string>
+    <string name="ad_pocket_mode_off">Apagado</string>
+    <string name="ad_pocket_mode_notifications">Solo notificaciones</string>
+    <string name="ad_pocket_mode_always">Siempre</string>
     
     <string name="show_activity_indicators_on_status_bar_title">Indicador de red</string>
     <string name="show_activity_indicators_on_status_bar_summary">Muestra el indicador de actividad de la red/wifi  en la barra de estado</string>
