@@ -128,6 +128,21 @@ public class InputMethodsSettings extends SettingsPreferenceFragment implements
 
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
+
+    public void mKeyboardRotationDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setMessage(R.string.keyboard_rotation_dialog);
+        builder.setCancelable(false);
+        builder.setPositiveButton(
+            getResources().getString(com.android.internal.R.string.ok), null);
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
+
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mVolumeKeyCursorControl) {
             String volumeKeyCursorControl = (String) objValue;
@@ -146,10 +161,10 @@ public class InputMethodsSettings extends SettingsPreferenceFragment implements
                 Settings.System.STATUS_BAR_IME_SWITCHER, (Boolean) objValue ? 1 : 0);
             return true;
         } else if (preference == mKeyboardRotationToggle) {
-            boolean isAutoRotate = (Settings.System.getIntForUser(getContentResolver(),
-                        Settings.System.ACCELEROMETER_ROTATION, 0, UserHandle.USER_CURRENT) == 1);
+            boolean isAutoRotate = (Settings.System.getInt(getContentResolver(),
+                        Settings.System.ACCELEROMETER_ROTATION, 0) == 1);
             if (isAutoRotate && (Boolean) objValue) {
-                showDialogInner(DLG_KEYBOARD_ROTATION);
+                mKeyboardRotationDialog();
             }
             Settings.System.putInt(getContentResolver(),
                     Settings.System.KEYBOARD_ROTATION_TIMEOUT,
