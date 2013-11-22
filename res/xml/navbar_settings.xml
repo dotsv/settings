@@ -26,9 +26,15 @@
                 android:key="navbar_cat"
                 android:title="@string/navbar_cat" >
 
+                
+         <Preference
+            style="?android:preferenceInformationStyle"
+            android:summary="@string/navbar_summary"
+	    android:selectable="false" />                
             <PreferenceScreen
                     android:key="navbar_button_settings"
                     android:fragment="com.android.settings.slim.dslv.ButtonsListViewSettings"
+		    android:icon="@drawable/ic_na"
                     android:title="@string/navbar_button_title">
                 <extra android:name="buttonMode" android:value="0" />
                 <extra android:name="maxAllowedButtons" android:value="5" />
@@ -37,19 +43,21 @@
             </PreferenceScreen>
 
             <PreferenceScreen
+                android:key="navbar_style_dimen_settings"
+                android:fragment="com.android.settings.slim.NavbarStyleDimenSettings"
+		android:icon="@drawable/ic_na"
+                android:title="@string/navbar_style_dimen_title" />
+            
+            <PreferenceScreen
                     android:key="navbar_targets_settings"
                     android:fragment="com.android.settings.slim.dslv.ButtonsListViewSettings"
+		    android:icon="@drawable/ic_ring"
                     android:title="@string/navbar_targets_title">
                 <extra android:name="buttonMode" android:value="3" />
                 <extra android:name="maxAllowedButtons" android:value="5" />
                 <extra android:name="actionValues" android:value="shortcut_action_navring_values" />
                 <extra android:name="actionEntries" android:value="shortcut_action_navring_entries" />
             </PreferenceScreen>
-
-            <PreferenceScreen
-                android:key="navbar_style_dimen_settings"
-                android:fragment="com.android.settings.slim.NavbarStyleDimenSettings"
-                android:title="@string/navbar_style_dimen_title" />
 
         </PreferenceCategory>
 

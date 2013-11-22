@@ -74,6 +74,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private WarnedListPreference mFontSizePref;
     private PreferenceCategory mLightOptions;
     private PreferenceScreen mNotificationPulse;
+    private PreferenceScreen mNotificationLight;
     private PreferenceScreen mBatteryPulse;
     private CheckBoxPreference mVolumeWake;
 

@@ -114,23 +114,13 @@
         android:fragment="com.android.settings.undefined.InterfaceSettings"
         android:title="@string/interface_settings_title" />
 	
-       <!-- Additional SlimKat controls -->
-    <header android:title="@string/header_category_rom_settings" />
-
-    <!-- Interface -->
-    <header
-        android:id="@+id/interface_settings"
-        android:icon="@drawable/ic_settings_interface"
-        android:fragment="com.android.settings.slim.InterfaceSettings"
-        android:title="@string/interface_settings_title" />	  
-	
     <!-- Navigation -->
     <header
         android:id="@+id/navigation_settings"
         android:icon="@drawable/ic_settings_navigation"
-        android:fragment="com.android.settings.slim.NavigationSettings"
-        android:title="@string/navigation_settings_title" />
-
+        android:fragment="com.android.settings.slim.NavbarSettings"
+        android:title="@string/navigation_settings_title" /> 
+	
 
     <!-- Manage users -->
     <header
@@ -202,6 +192,13 @@
     <header android:id="@+id/system_section"
         android:title="@string/header_category_system" />
 
+    <!-- Superuser -->
+    <header
+        android:id="@+id/superuser"
+        android:fragment="com.koushikdutta.superuser.PolicyNativeFragment"
+        android:icon="@drawable/ic_action_permission"
+        android:title="@string/superuser" />
+
     <!-- Date & Time -->
     <header
         android:id="@+id/date_time_settings"
@@ -222,13 +219,6 @@
         android:fragment="com.android.settings.print.PrintSettingsFragment"
         android:icon="@*android:drawable/ic_print"
         android:title="@string/print_settings" />
-
-    <!-- Superuser -->
-    <header
-        android:id="@+id/superuser"
-        android:fragment="com.koushikdutta.superuser.PolicyNativeFragment"
-        android:icon="@drawable/ic_action_permission"
-        android:title="@string/superuser" />
 
     <!-- Development -->
     <header

@@ -4909,9 +4909,23 @@
 
     <string name="rom_title">Ajustes Avanzados</string>
   
-    <string name="interface_settings_title">Opciones Extras</string>
+    <string name="interface_settings_title">Nexus Control</string>
     <string name="interface_title">Ajustes de Interface</string>
-    
+
+    <string name="battery_summary">Permite ajustar el color del led para la bateria y notificaciones.</string>
+    <string name="menuapagado_title">Menu de Apagado</string>
+    <string name="power_summary">Modifica el menu de apagado de tu Nexus añadiendo o eliminando opciones a tu menú de apagado.</string>
+    <string name="navbar_summary">Modifica la barra de navegación de tu Nexus. Añade opciones, ajusta el tamaño y personaliza tu anillo de navegación.</string>
+    <string name="status_summary">Ajusta la barra de estado de tu Nexus.</string>
+    <string name="barra_title">Barra de estado</string>
+    <string name="lock_title">Bloqueo de pantalla</string>
+    <string name="locks_summary">Permite añadir o eliminar accesos directos en tu pantalla de bloqueo.</string>
+
+      <!-- ACTIVE DISPLAY -->
+    <string name="ad_title">ACTIVE DISPLAY</string>
+    <string name="active_tiles_note_title">Active Display</string>
+    <string name="active_tiles_note_summary">Active display permite mostrar las notificaciones en la pantalla de bloqueo cuando el dispositivo tiene la pantalla apagada.</string>
+   
     <!--Active Display Start -->
     <string name="trigger_category">Trigger region</string>
     <string name="trigger_width_title">Trigger width</string>
@@ -4920,6 +4934,7 @@
     <string name="trigger_top_summary">Adjust the vertical postion of the trigger area</string>
     <string name="trigger_bottom_title">Trigger height</string>
     <string name="trigger_bottom_summary">Adjust the height of the trigger area</string>
+
 
     <string name="ad_settings_title">Active display</string>
     <string name="ad_settings_summary">Change active display settings</string>
@@ -4952,5 +4967,8 @@
     <string name="ad_redisplay_1h">1 hour</string>
     <string name="ad_redisplay_2h">2 hours</string>
     <string name="ad_redisplay_5h">5 hours</string>
+
+   
+    
 
 </resources>
