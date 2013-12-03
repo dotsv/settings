@@ -141,9 +141,6 @@
             android:name="com.koushikdutta.superuser.SuReceiver"
             android:permission="android.permission.REPORT_SUPERUSER" />
 
-
-
-
         <!-- Settings -->
 
         <activity android:name="Settings"
