@@ -1548,9 +1548,12 @@
         <activity android:name=".undefined.InterfaceSettings" />
 	<activity android:name=".slim.notificationlight.BatteryLightSettings" />
 	<activity android:name=".slim.notificationlight.NotificationLightSettings" />
-	
-	
-	
+	<activity android:name=".slim.notificationlight.ApplicationLightPreference" />
+	<activity android:name=".slim.notificationlight.ColorPanelView" />
+	<activity android:name=".slim.notificationlight.LightSettingsDialog" />
+	<activity android:name=".slim.notificationlight.ColorPickerView" />
+	<activity android:name=".slim.notificationlight.ColorPanelView" />
+	<activity android:name=".slim.notificationlight.AlphaPatternDrawable" />
 	
 	  <!-- BUILD TWEAKS END -->
 	
