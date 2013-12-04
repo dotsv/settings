@@ -5,5 +5,20 @@
     android:title="@string/interface_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+         android:key="category_light_options"
+         android:title="@string/display_category_light_options_title" >
+    </PreferenceCategory>
+    
+    <PreferenceScreen
+          android:key="battery_light"
+          android:title="@string/battery_light_title"
+          android:fragment="com.android.settings.slim.notificationlight.BatteryLightSettings" />
 
+    <PreferenceScreen
+          android:key="notification_pulse"
+          android:title="@string/notification_pulse_title"
+          android:fragment="com.android.settings.slim.notificationlight.NotificationLightSettings" />
+      
+      
 </PreferenceScreen> 

@@ -1546,8 +1546,11 @@
 
 	  <!-- BUILD TWEAKS START -->
         <activity android:name=".undefined.InterfaceSettings" />
-	<activity android:name=".slim/notificationlight/NotificationLightSettings" />
-	<activity android:name=".slim/notificationlight/BatteryLightSettings" />
+	<activity android:name=".slim.notificationlight.BatteryLightSettings" />
+	<activity android:name=".slim.notificationlight.NotificationLightSettings" />
+	
+	
+	
 	
 	  <!-- BUILD TWEAKS END -->
 	
