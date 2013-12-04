@@ -24,6 +24,7 @@
     <string name="additional_options_title">Opciones extras</string>
     <string name="reset_message">Reiniciar todos los valores?</string>
     <string name="style_title">Estilo</string>
+    <string name="add">Añadir</string>
 
     <!-- Settings main menu category heading. Rom (Launcher, Themes, System). [CHAR LIMIT=40] -->
         <string name="header_category_rom_settings">Ajustes Avanzados</string>
@@ -570,6 +571,7 @@
     <string name="tiles_reset_message">Restore the default displayed tiles and layout?</string>
 
     <!-- QuickSettings style options -->
+    <string name="notification_drawer_qs_title">QuickSettings</string>
     <string name="quicksettings_tiles_style">Style</string>
     <string name="summary_quicksettings_tiles_style">View or change quick settings style options</string>
     <string name="quicksettings_tiles_style_additional_options">Additional options</string>
