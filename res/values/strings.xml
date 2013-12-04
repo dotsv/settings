@@ -4903,4 +4903,16 @@
 
     <!-- Text to display in regulatory info screen (from device overlay). -->
     <string name="regulatory_info_text"></string>
+    
+    
+     <!-- ROM STARTED! -->
+
+    <string name="rom_title">Ajustes Avanzados</string>
+  
+    <string name="interface_settings_title">Opciones Extras</string>
+    <string name="interface_title">Ajustes de Interface</string>
+
+
+    
+    
 </resources>

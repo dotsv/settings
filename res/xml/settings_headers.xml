@@ -103,6 +103,16 @@
         android:icon="@drawable/ic_settings_applications"
         android:title="@string/applications_settings"
         android:id="@+id/application_settings" />
+	
+	
+    <!-- ROM START -->  
+    <header android:title="@string/rom_title" />
+
+    <header
+        android:id="@+id/system_settings"
+        android:icon="@drawable/ic_menu_icon"
+        android:fragment="com.android.settings.undefined.InterfaceSettings"
+        android:title="@string/interface_settings_title" />
 
     <!-- Manage users -->
     <header
