@@ -4968,8 +4968,8 @@
     <string name="ad_redisplay_2h">2 horas</string>
     <string name="ad_redisplay_5h">5 horas</string>
     
-    <string name="show_activity_indicators_on_status_bar_title">Network activity indicator</string>
-    <string name="show_activity_indicators_on_status_bar_summary">Show network activity in statusbar</string>
+    <string name="show_activity_indicators_on_status_bar_title">Indicador de red</string>
+    <string name="show_activity_indicators_on_status_bar_summary">Muestra el indicador de actividad de la red/wifi  en la barra de estado</string>
 
 
    

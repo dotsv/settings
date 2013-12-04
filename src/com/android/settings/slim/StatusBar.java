@@ -52,6 +52,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.status_bar_settings);
+        ContentResolver resolver = getActivity().getContentResolver();
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
@@ -67,29 +68,30 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
 
         mStatusBarBrightnessControl =
             (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_BRIGHTNESS_CONTROL);
-        mStatusBarBrightnessControl.setChecked((Settings.System.getInt(getContentResolver(),
-                            Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL, 0) == 1));
+        mStatusBarBrightnessControl.setChecked((Settings.System.getInt(getContentResolver(),Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL, 0) == 1));
         mStatusBarBrightnessControl.setOnPreferenceChangeListener(this);
         
         mStatusBarNetworkActivity = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_NETWORK_ACTIVITY);
-        mStatusBarNetworkActivity.setChecked(Settings.System.getInt(resolver,
-            Settings.System.STATUS_BAR_NETWORK_ACTIVITY, 0) == 1);
+        mStatusBarNetworkActivity.setChecked(Settings.System.getInt(resolver,Settings.System.STATUS_BAR_NETWORK_ACTIVITY, 0) == 1);
         mStatusBarNetworkActivity.setOnPreferenceChangeListener(this);
 
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+    
+	ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mStatusBarBrightnessControl) {
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL,
                     (Boolean) newValue ? 1 : 0);
             return true;
         }else if (preference == mStatusBarNetworkActivity) {
-            boolean value = (Boolean) objValue;
-            Settings.System.putInt(resolver,
-                Settings.System.STATUS_BAR_NETWORK_ACTIVITY, value ? 1 : 0);
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver, Settings.System.STATUS_BAR_NETWORK_ACTIVITY, value ? 1 : 0);
+        }else{
         return false;
         }
+        return true;
     }
 
     @Override
