@@ -26,7 +26,20 @@
 	    android:selectable="false" />
     <!-- Active display -->
     
+     <PreferenceCategory
+      
+         android:title="@string/qs_title" >
+    </PreferenceCategory>
     
+    
+    <PreferenceScreen
+       android:key="notification_drawer_qs"
+       android:fragment="com.android.settings.slim.NotificationDrawerQsSettings"
+       android:icon="@drawable/ic_settings_notifications"
+       android:summary="@string/qs_settings_summary"
+       android:title="@string/notification_drawer_qs_title" />
+       
+        
     <PreferenceCategory
          android:key="category_light_options"
          android:title="@string/display_category_light_options_title" >
@@ -115,10 +128,4 @@
 	android:summary="@string/status_summary"
         android:title="@string/status_bar_title" />
     
-    <PreferenceScreen
-       android:key="notification_drawer_qs"
-       android:fragment="com.android.settings.slim.NotificationDrawerQsSettings"
-       android:title="@string/notification_drawer_qs_title" />
-
-    
-</PreferenceScreen>
+ </PreferenceScreen>

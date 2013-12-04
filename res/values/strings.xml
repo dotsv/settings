@@ -4921,6 +4921,9 @@
     <string name="barra_title">Barra de estado</string>
     <string name="lock_title">Bloqueo de pantalla</string>
     <string name="locks_summary">Permite añadir o eliminar accesos directos en tu pantalla de bloqueo.</string>
+    <string name="qs_settings_summary">Ajusta el panel de notificaciones.</string>
+    <string name="qs_title">Paneles Rapidos</string>
+    
 
       <!-- ACTIVE DISPLAY -->
     <string name="ad_title">ACTIVE DISPLAY</string>
@@ -4932,7 +4935,7 @@
     <string name="ad_timeout_5s">5 segundos</string>
     <string name="ad_timeout_8s">8 segundos</string>
     <string name="ad_timeout_10s">10 segundos</string>
-    <string name="ad_timeout_15s">15 segundos/string>
+    <string name="ad_timeout_15s">15 segundos</string>
     <string name="ad_timeout_25s">25 segundos</string>
 
 
@@ -4978,7 +4981,7 @@
     <string name="ad_redisplay_1h">1 hora</string>
     <string name="ad_redisplay_2h">2 horas</string>
     <string name="ad_redisplay_5h">5 horas</string>
-     <string name="ad_excluded_apps_title">Bloquear aplicaciones</string>
+    <string name="ad_excluded_apps_title">Bloquear aplicaciones</string>
     <string name="ad_excluded_apps_summary">Las aplicaciones bloqueadas no seran mostradas en Active Display.</string>
     <string name="ad_pocket_mode_off">Apagado</string>
     <string name="ad_pocket_mode_notifications">Solo notificaciones</string>
@@ -4987,8 +4990,6 @@
     <string name="show_activity_indicators_on_status_bar_title">Indicador de red</string>
     <string name="show_activity_indicators_on_status_bar_summary">Muestra el indicador de actividad de la red/wifi  en la barra de estado</string>
 
-
-   
     
 
 </resources>
