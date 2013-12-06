@@ -233,8 +233,7 @@
 
 
     <!-- Button shorcut actions -->
-<<<<<<< HEAD
-   <string name="shortcut_action_airplane">Modo avión</string>
+    <string name="shortcut_action_airplane">Modo avión</string>
     <string name="shortcut_action_power_off">Apagar</string>
     <string name="shortcut_action_reboot">Reiniciar</string>
     <string name="shortcut_action_sound">Sonido</string>
@@ -594,7 +593,10 @@
     <string name="sound_mode_silent">Silencio</string>
     <string name="sound_mode_vibrate">Vibrar</string>
     <string name="sound_mode_sound">Sonido</string>
+    <string name="pref_music_mode_title">Music mode</string>
     <string name="sound_mode_soundVibrate">Sonido &amp; Vibrar</string>
+    <string name="music_tile_mode_background">Mostrar imagen del album</string>
+    <string name="music_tile_mode_tracktitle">Mostrar titulo de la canción</string>
 
     <!-- QuickSettings: Quick Pulldown -->
     <string name="title_quick_pulldown">Desplazamiento rápido</string>
